@@ -1,5 +1,4 @@
 import java.util.List;
-// import java.util.ArrayList;
 class Solution {
     public List<String> fizzBuzz(int n) {
         List<String> arr = new ArrayList<>();
@@ -11,7 +10,7 @@ class Solution {
             } else if(i%5==0 && i%3!=0){
                 arr.add("Buzz");
             } else{
-                arr.add(Integer.toString(i));
+                arr.add(String.valueOf(i));
             }
         }
         return arr;
