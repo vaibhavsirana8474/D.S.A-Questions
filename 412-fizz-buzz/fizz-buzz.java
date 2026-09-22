@@ -10,7 +10,7 @@ class Solution {
             } else if(i%5==0 && i%3!=0){
                 arr.add("Buzz");
             } else{
-                arr.add(i+"");
+                arr.add(Integer.toString(i));
             }
         }
         return arr;
