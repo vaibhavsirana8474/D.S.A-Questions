@@ -1,14 +1,9 @@
 class Solution {
     public int findNumbers(int[] nums) {
-        int n = nums.length;
         int count=0;
-        for(int i=0;i<n;i++){
-            int digits=0;
-            while(nums[i]!=0){
-                digits++;
-                nums[i]=nums[i]/10;
-            }
-            if(digits%2==0) count++;
+        for(int i=0;i<nums.length;i++){
+            String num = Integer.toString(nums[i]);
+            if(num.length()%2==0) count++;
         }
         return count;
     }
