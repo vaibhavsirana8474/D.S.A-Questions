@@ -17,7 +17,7 @@ class Solution {
         // for(int i=0;i<size;i++){
         //     if(arr[i]==h) return (i+1);
         // }
-        
+
         int max=Integer.MIN_VALUE;
         for(int ele: piles){
             max=Math.max(max,ele);
@@ -30,11 +30,11 @@ class Solution {
             for(int ele:piles){
                 count+=Math.ceil((double)ele/(double)mid);
             }
-            if(count>h){
-                min=mid+1;
-            } else{
+            if(count<=h){
                 ans=mid;
                 max=mid-1;
+            } else{
+                min=mid+1;
             }
         }
         return ans;
