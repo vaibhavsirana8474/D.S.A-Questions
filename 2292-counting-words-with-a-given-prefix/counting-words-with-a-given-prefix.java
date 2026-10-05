@@ -3,8 +3,8 @@ class Solution {
         int count=0;
         int n=words.length;
         for(int i=0;i<n;i++){
-            String s = words[i];
-            if(s.startsWith(pref)){
+            // String s = words[i];
+            if(words[i].startsWith(pref)){
                 count++;
             }
         }
