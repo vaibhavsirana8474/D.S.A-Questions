@@ -1,10 +1,9 @@
 class Solution {
     public boolean halvesAreAlike(String s) {
         int n = s.length();
-        s=s.toLowerCase();
         int i=0;
         int j=n/2;
-        String vovel = "aeiou";
+        String vovel = "aeiouAEIOU";
         int count1=0;
         int count2=0;
         while(i<n/2 && j<n){
