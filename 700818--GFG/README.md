@@ -1,0 +1,2 @@
+# [](https://www.geeksforgeeks.org/problems/predict-the-column/1)
+## 
